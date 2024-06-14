@@ -122,7 +122,8 @@ def main(args):
                     else np.iinfo(np.uint8).max
                 )
 
-                print(img_name)
+                # FOR DEBUGGING, UNCOMMENT THE PRINT TO SHOW ON WHICH IMAGE FILE GETS THE CODE STUCK ON 
+                #print(img_name)
 
                 img_fp = img_u8.astype(dtype=np.float32) / norm_value
                 input = np.zeros((1, 960, 1280, 1), dtype=np.float32)
